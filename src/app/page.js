@@ -8,13 +8,13 @@ import ServicesSection from './servicesSection/page';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.main}>
       <HeaderSection />
       <HomePage />
       <ServicesSection />
       <AboutSection />
       <ContactSection />
       <FooterSection />
-    </>
+    </div>
   );
 }

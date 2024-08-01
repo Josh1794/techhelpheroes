@@ -17,7 +17,8 @@
 .bookingButton {
   padding: 10px;
   border-radius: 16px;
-  border-width: 2px;
+  border-width: 3px;
+  border-style: solid;
   border-color: orange;
   background-color: orange;
   color: white;
