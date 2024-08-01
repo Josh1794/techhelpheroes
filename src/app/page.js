@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import HomePage from './homePage/page';
+import HomePage from './homeSection/page';
 import HeaderSection from './headerSection/page';
 import AboutSection from './aboutSection/page';
 import FooterSection from './footerSection/page';
@@ -11,8 +11,8 @@ export default function Home() {
     <div className={styles.main}>
       <HeaderSection />
       <HomePage />
-      <ServicesSection />
       <AboutSection />
+      <ServicesSection />
       <ContactSection />
       <FooterSection />
     </div>

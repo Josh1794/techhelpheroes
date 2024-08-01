@@ -226,3 +226,9 @@
     transform: rotate(0deg);
   }
 }
+
+.response {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}

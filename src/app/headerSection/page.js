@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './header.module.css';
 
 export default function HeaderSection() {
@@ -9,9 +10,9 @@ export default function HeaderSection() {
         <h2>About</h2>
         <h2>Services</h2>
         <h2>Contact</h2>
-        <button className={styles.bookingButton}>
-          <h2>Book Now</h2>
-        </button>
+        <Link href='/booking' className={styles.bookingButton}>
+          <h3>Book Now</h3>
+        </Link>
       </div>
     </header>
   );

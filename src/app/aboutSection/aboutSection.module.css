@@ -1,0 +1,13 @@
+.aboutSectionLayout {
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.aboutSectionTitle {
+  padding-bottom: 10px;
+}
+
+.aboutSectionBody {
+  color: rgb(300, 300, 300);
+}
