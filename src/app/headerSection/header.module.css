@@ -6,16 +6,24 @@
   justify-content: space-between;
 }
 
+.titleSection {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
 .navSection {
   display: flex;
   flex-direction: row;
   width: 50%;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .bookingButton {
-  padding: 10px;
+  padding: 5px;
   border-radius: 16px;
   border-width: 3px;
   border-style: solid;

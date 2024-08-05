@@ -1,0 +1,42 @@
+.serviceSectionLayout {
+  display: flex;
+  flex-direction: column;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.serviceSectionCardLayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceSectionCard {
+  width: 30%;
+  height: 300px;
+  margin: 1.5%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 4px;
+  color: black;
+  overflow: scroll;
+  white-space: pre-line;
+}
+
+@media (max-width: 1200px) {
+  .serviceSectionCard {
+    width: 97%;
+    height: 320px;
+    margin: 1.5%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 4px;
+    color: black;
+    overflow: hidden;
+    white-space: pre-line;
+  }
+}
