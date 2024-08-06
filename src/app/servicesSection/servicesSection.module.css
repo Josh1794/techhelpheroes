@@ -5,38 +5,51 @@
   padding-left: 6rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: white;
+  color: #275070;
 }
 
 .serviceSectionCardLayout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .serviceSectionCard {
   width: 30%;
-  height: 300px;
+  min-height: fit-content;
+  height: 450px;
   margin: 1.5%;
-  background-color: whitesmoke;
+  background-color: #275070;
   padding: 20px;
-  border-radius: 4px;
-  color: black;
-  overflow: scroll;
+  border-radius: 8px;
+  color: white;
   white-space: pre-line;
 }
 
 @media (max-width: 1200px) {
+  .serviceSectionLayout {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   .serviceSectionCard {
     width: 97%;
-    height: 320px;
-    margin: 1.5%;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 4px;
-    color: black;
+    height: fit-content;
     overflow: hidden;
     white-space: pre-line;
   }
+}
+
+.serviceSectionCardTitle {
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.serviceSectionCardDescription {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: 400;
 }

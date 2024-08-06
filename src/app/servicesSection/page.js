@@ -1,3 +1,4 @@
+import ServiceCard from './serviceCard';
 import styles from './servicesSection.module.css';
 
 export default function ServicesSection() {
@@ -19,18 +20,18 @@ export default function ServicesSection() {
       title: 'Smart Home Design and Setup',
       description: `We’ll design and implement a custom plan to bring your home into the future with smart devices and home accessories. Don’t waste your time sifting through endless reviews and buying things you don’t need. Let us outfit your space with the best tech and get all your devices connected.`,
     },
+    {
+      title: 'Purchase Consultations',
+      description:
+        'We will discuss what products best meet your needs and wants. Should you opt for that pricey extra storage or save your money for something more important. We will advise you on what products are available, what is best for your budget, use case, and preference.',
+    },
   ];
   return (
     <div className={styles.serviceSectionLayout}>
       <h1>Services</h1>
       <div className={styles.serviceSectionCardLayout}>
         {services.map((service) => {
-          return (
-            <div className={styles.serviceSectionCard}>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          );
+          return <ServiceCard service={service} />;
         })}
       </div>
     </div>

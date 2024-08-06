@@ -4,10 +4,20 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+@media (max-width: 1200px) {
+  .aboutSectionLayout {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .aboutSectionTitle {
   padding-bottom: 10px;
 }
 
 .aboutSectionBody {
-  color: rgb(300, 300, 300);
+  color: white;
 }
