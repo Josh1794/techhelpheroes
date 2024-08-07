@@ -1,0 +1,35 @@
+.contactSectionLayout {
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .contactSectionLayout {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.contactSectionTitle {
+  padding-bottom: 10px;
+}
+
+.contactSectionBody {
+  padding-left: 10px;
+}
+
+.contactSectionBodyGroup {
+  padding: 5px;
+}
+
+.contactSectionBodyLink {
+  text-decoration: underline;
+}
+.contactSectionBodyLink:hover {
+  color: orange;
+  transition: color 0.5s;
+}
