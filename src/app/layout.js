@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Roboto } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           // strategy='beforeInteractive'
           src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js'
         />
+        <Analytics />
         {children}
       </body>
     </html>
