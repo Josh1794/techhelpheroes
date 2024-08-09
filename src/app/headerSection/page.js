@@ -91,7 +91,10 @@ export default function HeaderSection(props) {
               </Button>
             ))} */}
           </Box>
-          <Link href='/booking' className={styles.bookingButton}>
+          <Link
+            href='https://calendly.com/techhelpheroes/15min'
+            className={styles.bookingButton}
+          >
             <h4>Book Now</h4>
           </Link>
         </Toolbar>

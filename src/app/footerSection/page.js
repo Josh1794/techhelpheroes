@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import styles from './footerSection.module.css';
+
 export default function FooterSection() {
   return (
-    <div>
+    <div className={styles.footerSectionLayout}>
       <Image
         src='/Tech Help Heroes.png'
         width={200}
