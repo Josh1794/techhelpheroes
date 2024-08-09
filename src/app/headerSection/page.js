@@ -60,19 +60,21 @@ export default function HeaderSection(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box>
       <CssBaseline />
-      <AppBar component='nav' style={{ backgroundColor: 'lightgray' }}>
-        <Toolbar>
-          {/* <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            edge='start'
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton> */}
+      <AppBar
+        component='nav'
+        style={{
+          backgroundColor: 'lightgray',
+        }}
+      >
+        <Toolbar
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}
+        >
           <Image
             priority
             src='/Tech Help Heroes.png'
@@ -80,17 +82,6 @@ export default function HeaderSection(props) {
             height={75}
             alt='Tech Help Heroes Logo'
           />
-          <Box
-            component='div'
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          ></Box>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {/* {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))} */}
-          </Box>
           <Link
             href='https://calendly.com/techhelpheroes/15min'
             className={styles.bookingButton}
@@ -99,26 +90,6 @@ export default function HeaderSection(props) {
           </Link>
         </Toolbar>
       </AppBar>
-      <nav>
-        {/* <Drawer
-          container={container}
-          variant='temporary'
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': {
-              boxSizing: 'border-box',
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer> */}
-      </nav>
     </Box>
   );
 }
